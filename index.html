@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I hate frontend! Piotr Benetkiewicz Blog</title>
+    <meta name="description" content="Piotr Benetkiewicz hating frontend the humane way." />
+    <style>
+      @font-face {
+        font-family: "comic_neuebold_italic";
+        src: url(comicneue-bolditalic-webfont.ttf) format('truetype'),
+          url(comicneue-bolditalic-webfont.woff2) format("woff2"),
+          url(comicneue-bolditalic-webfont.woff) format("woff");
+        font-display: swap;
+      }
+      html, body {
+        background-color: #F0F0F0;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        margin: 0 auto;
+        max-width: 800px;
+      }
+      @media (max-width: 480px) {
+        .container {
+          max-width: 480px;
+        }
+      }
+      .headerContainer {
+        padding: 0 32px;
+        background-color: #AECED1;
+        display: flex;
+        font-size: x-large;
+        font-family: "comic_neuebold_italic", cursive;
+        font-style: italic;
+        font-weight: bold;
+        align-items: center;
+        justify-content: space-between;
+      }
+      @media (max-width: 480px) {
+        .headerContainer {
+          padding: 17px 0;
+          flex-direction: column;
+        }
+      }
+      .bigger {
+        font-size: xx-large;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root" class="container"></div>
+    <script type="module" src="src/main.tsx"></script>
+  </body>
+</html>
