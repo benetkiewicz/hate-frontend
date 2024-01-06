@@ -1,4 +1,4 @@
-import logo from '/frontend-logo-small.webp'
+import logo from '/frontend-logo-smallest.webp'
 const Header = () => {
 return (<div className="headerContainer">
     <div>I</div>

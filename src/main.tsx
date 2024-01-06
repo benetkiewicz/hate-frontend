@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./components/app";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Weather from "./components/weather";
+import Home from "./components/home";
 import List from "./components/list";
 import Post from "./components/post";
 
@@ -13,7 +13,7 @@ const router  = createBrowserRouter([
     children: [
       {
         path: "/hate-frontend/",
-        element: <Weather />
+        element: <Home />
       },
       {
         path: "/hate-frontend/posts",
