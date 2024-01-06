@@ -10,7 +10,7 @@ function Weather() {
         })();
     });
 
-    return <div>Hello {import.meta.env.VITE_MESSAGE}, Temperatura w Toruniu to {temperature}°C</div>;
+    return <div>Hello world, Temperatura w Toruniu to {temperature}°C</div>;
 }
 
 export default Weather;
