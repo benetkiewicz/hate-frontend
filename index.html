@@ -13,14 +13,22 @@
           url(comicneue-bolditalic-webfont.woff) format("woff");
         font-display: swap;
       }
+      @font-face {
+        font-family: 'robotoregular';
+        src: url('roboto-regular-webfont.ttf') format('truetype'),
+         url('roboto-regular-webfont.woff2') format('woff2'),
+         url('roboto-regular-webfont.woff') format('woff');
+      }
       html, body {
         background-color: #F0F0F0;
         margin: 0;
         padding: 0;
+        font-family: "robotoregular", sans-serif;
       }
       .container {
         margin: 0 auto;
         max-width: 800px;
+        padding: 9px;
       }
       @media (max-width: 480px) {
         .container {
@@ -28,7 +36,6 @@
         }
       }
       .headerContainer {
-        padding: 0 32px;
         background-color: #AECED1;
         display: flex;
         font-size: x-large;
@@ -36,7 +43,8 @@
         font-style: italic;
         font-weight: bold;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        column-gap: 22px;
       }
       @media (max-width: 480px) {
         .headerContainer {
@@ -47,10 +55,18 @@
       .bigger {
         font-size: xx-large;
       }
+      ul.nav {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 11px;
+        column-gap: 22px;
+      }
     </style>
   </head>
   <body>
-    <div id="root" class="container"></div>
+    <div id="root"></div>
     <script type="module" src="src/main.tsx"></script>
   </body>
 </html>
