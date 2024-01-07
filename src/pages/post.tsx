@@ -26,15 +26,18 @@ const Post = () => {
     });
 
     return (<Markdown
+        // eslint-disable-next-line react/no-children-prop
         children={markdown}
         components={{
           code(props) {
-            const {children, className, node, ...rest} = props
+            // eslint-disable-next-line react/prop-types
+            const {children, className, ...rest} = props
             const match = /language-(\w+)/.exec(className || '')
             return match ? (
               <SyntaxHighlighter
                 {...rest}
                 PreTag="div"
+                // eslint-disable-next-line react/no-children-prop
                 children={String(children).replace(/\n$/, '')}
                 language={match[1]}
                 style={oneLight}

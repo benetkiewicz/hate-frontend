@@ -2,9 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./components/app";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Home from "./components/home";
-import List from "./components/list";
-import Post from "./components/post";
+import Home from "./pages/home";
+import List from "./pages/list";
+import Post from "./pages/post";
 
 const router  = createBrowserRouter([
   {
@@ -26,7 +26,7 @@ const router  = createBrowserRouter([
     ]
   }
 ])
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
       <RouterProvider router={router} />
     </React.StrictMode>,
