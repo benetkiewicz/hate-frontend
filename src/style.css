@@ -27,6 +27,14 @@ body {
   padding: 9px;
 }
 
+a {
+  color: #06191D;
+}
+
+a:visited {
+  color: #06191D;
+}
+
 @media (max-width: 480px) {
   .container {
     max-width: 480px;
@@ -42,12 +50,12 @@ body {
   font-weight: bold;
   align-items: center;
   justify-content: center;
-  column-gap: 22px;
+  column-gap: 18px;
 }
 
 @media (max-width: 480px) {
   .headerContainer {
-    padding: 17px 0;
+    padding: 18px 0;
     flex-direction: column;
   }
 }
@@ -58,11 +66,11 @@ body {
 
 ul.nav {
   display: flex;
+  padding: 0;
   justify-content: center;
   list-style-type: none;
-  margin: 0;
-  padding: 11px;
-  column-gap: 22px;
+  margin-top: 9px;
+  gap: 18px;
 }
 
 .titleItem {
@@ -71,24 +79,16 @@ ul.nav {
 
 .titleDate {
   border: solid 1px #AECED1;
-  padding: 3px 0 3px 11px;
+  padding: 3px 0 3px 9px;
   background-color: #AECED1;
   font-size: smaller;
 }
 
 .titleHeading {
-  padding: 0 11px;
+  padding: 0 9px;
   font-size: larger;
 }
 
-a.titleLink {
-  text-decoration: none;
-}
-
-a.titleLink:visited {
-  color: #000;
-}
-
 .subTitle {
-  padding: 0 11px;
+  padding: 0 9px;
 }
