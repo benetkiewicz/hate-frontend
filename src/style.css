@@ -65,31 +65,30 @@ ul.nav {
   column-gap: 22px;
 }
 
-.blogTitle {
+.titleItem {
   margin-bottom: 27px;
+}
 
-  &>div {
-    border: solid 1px #AECED1;
-    padding: 3px 0 3px 11px;
-    background-color: #AECED1;
-    font-size: smaller;
-  }
+.titleDate {
+  border: solid 1px #AECED1;
+  padding: 3px 0 3px 11px;
+  background-color: #AECED1;
+  font-size: smaller;
+}
 
-  &>H2 {
-    padding: 0 11px;
-    font-size: larger;
+.titleHeading {
+  padding: 0 11px;
+  font-size: larger;
+}
 
-    &>a {
-      text-decoration: none;
-    }
+a.titleLink {
+  text-decoration: none;
+}
 
-    &>a:visited {
-      color: #000;
-      text-decoration: none;
-    }
-  }
+a.titleLink:visited {
+  color: #000;
+}
 
-  &>p {
-    padding: 0 11px;
-  }
+.subTitle {
+  padding: 0 11px;
 }
