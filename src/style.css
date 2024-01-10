@@ -1,58 +1,95 @@
 @font-face {
-    font-family: "comic_neuebold_italic";
-    src: url(/hate-frontend/comicneue-bolditalic-webfont.woff2) format("woff2"),
-      url(/hate-frontend/comicneue-bolditalic-webfont.woff) format("woff"),
-      url(/hate-frontend/comicneue-bolditalic-webfont.ttf) format('truetype');
-    font-display: swap;
-  }
-  @font-face {
-    font-family: 'robotoregular';
-    src: url(/hate-frontend/roboto-regular-webfont.woff2) format('woff2'),
-     url(/hate-frontend/roboto-regular-webfont.woff) format('woff'),
-     url(/hate-frontend/roboto-regular-webfont.ttf) format('truetype');
-    font-display: swap;
-  }
-  body {
-    background-color: #F0F0F0;
-    margin: 0;
-    padding: 0;
-    font-family: "robotoregular", sans-serif;
-  }
+  font-family: "comic_neuebold_italic";
+  src: url(/hate-frontend/comicneue-bolditalic-webfont.woff2) format("woff2"),
+    url(/hate-frontend/comicneue-bolditalic-webfont.woff) format("woff"),
+    url(/hate-frontend/comicneue-bolditalic-webfont.ttf) format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'robotoregular';
+  src: url(/hate-frontend/roboto-regular-webfont.woff2) format('woff2'),
+    url(/hate-frontend/roboto-regular-webfont.woff) format('woff'),
+    url(/hate-frontend/roboto-regular-webfont.ttf) format('truetype');
+  font-display: swap;
+}
+
+body {
+  background-color: #F0F0F0;
+  margin: 0;
+  padding: 0;
+  font-family: "robotoregular", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 9px;
+}
+
+@media (max-width: 480px) {
   .container {
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 9px;
+    max-width: 480px;
   }
-  @media (max-width: 480px) {
-    .container {
-      max-width: 480px;
-    }
-  }
+}
+
+.headerContainer {
+  background-color: #AECED1;
+  display: flex;
+  font-size: x-large;
+  font-family: "comic_neuebold_italic", cursive;
+  font-style: italic;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  column-gap: 22px;
+}
+
+@media (max-width: 480px) {
   .headerContainer {
-    background-color: #AECED1;
-    display: flex;
-    font-size: x-large;
-    font-family: "comic_neuebold_italic", cursive;
-    font-style: italic;
-    font-weight: bold;
-    align-items: center;
-    justify-content: center;
-    column-gap: 22px;
+    padding: 17px 0;
+    flex-direction: column;
   }
-  @media (max-width: 480px) {
-    .headerContainer {
-      padding: 17px 0;
-      flex-direction: column;
+}
+
+.bigger {
+  font-size: xx-large;
+}
+
+ul.nav {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 11px;
+  column-gap: 22px;
+}
+
+.blogTitle {
+  margin-bottom: 27px;
+
+  &>div {
+    border: solid 1px #AECED1;
+    padding: 3px 0 3px 11px;
+    background-color: #AECED1;
+    font-size: smaller;
+  }
+
+  &>H2 {
+    padding: 0 11px;
+    font-size: larger;
+
+    &>a {
+      text-decoration: none;
+    }
+
+    &>a:visited {
+      color: #000;
+      text-decoration: none;
     }
   }
-  .bigger {
-    font-size: xx-large;
+
+  &>p {
+    padding: 0 11px;
   }
-  ul.nav {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 11px;
-    column-gap: 22px;
-  }
+}
