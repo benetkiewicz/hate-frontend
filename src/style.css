@@ -78,17 +78,22 @@ ul.nav {
 }
 
 .titleDate {
-  border: solid 1px #AECED1;
-  padding: 3px 0 3px 9px;
+  text-align: right;
+  padding: 3px 0 3px 0;
   background-color: #AECED1;
   font-size: smaller;
 }
 
+H2 {
+  color: #06191D;
+}
+
 .titleHeading {
-  padding: 0 9px;
   font-size: larger;
 }
 
-.subTitle {
-  padding: 0 9px;
+.date {
+  background-color: #F0F0F0;
+  padding: 3px 9px 3px 9px;
+  margin-right: 36px;
 }
