@@ -1,18 +1,23 @@
 {
     "extends": [
       "eslint:recommended",
-      "plugin:react-hooks/recommended",
-      "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
     ],
-    "plugins": ["react", "react-hooks"],
+    "plugins": ["react", "react-hooks", "@typescript-eslint"],
     "settings": {
       "react": {
         "version": "detect"
       }
     },
+    "parser": "@typescript-eslint/parser",
     "parserOptions": {
       "ecmaVersion": 2022,
       "sourceType": "module",
+      "project": "./tsconfig.json",
       "ecmaFeatures": {
         "jsx": true
       }

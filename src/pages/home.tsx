@@ -4,14 +4,14 @@ function Home() {
       <h1>Blog about Front End development</h1>
       <h2>(and hating it)</h2>
       <p>
-        I have a confession: I'm not a fan of front-end development. To me, it
+        I have a confession: I&apos;m not a fan of front-end development. To me, it
         feels like navigating through a maze of oddly named tools, facing
         gargantuan and often meaningless exception stack traces, and wrestling
-        with an endless sea of package dependencies. Don't even get me started
-        on the unit test conventions, which seem to be designed to test one's
+        with an endless sea of package dependencies. Don&apos;t even get me started
+        on the unit test conventions, which seem to be designed to test one&apos;s
         patience rather than the code. And TypeScript? Its syntax spirals into
         indecipherability so quickly that you need to slap on Prettier, only to
-        make things more convoluted. It's as if there's a new library trending
+        make things more convoluted. It&apos;s as if there&apos;s a new library trending
         every month, each claiming to be the panacea for all front-end ailments.
       </p>
       <p>
@@ -24,12 +24,12 @@ function Home() {
         front-end sorcery.
       </p>
       <p>
-        If you're a dedicated front-end developer, I suggest you look away now.
+        If you&apos;re a dedicated front-end developer, I suggest you look away now.
         Your presence here might just add another thirteen microbytes to your
-        package size, and we wouldn't want that, would we?
+        package size, and we wouldn&apos;t want that, would we?
       </p>
       <p>
-        So, let's take a deep breath and dive into this together. Who knows, we
+        So, let&apos;s take a deep breath and dive into this together. Who knows, we
         might just find some method to this madness after all.
       </p>
     </>
